@@ -37,11 +37,18 @@
 
 ```
 financial-analysis/
-├── fetch_data.py     # 采集 25 家公司年报利润表，写入 MySQL
-├── analysis.sql      # 10 段分析查询（核心产出）
-├── run_sql.py        # 批量执行 analysis.sql 并打印结果
-└── README.md
+├── fetch_data.py         # 采集 25 家公司年报利润表，写入 MySQL
+├── analysis.sql          # 10 段分析查询（核心产出）
+├── run_sql.py            # 批量执行 analysis.sql 并打印结果
+├── README.md
+└── audit-simulation/     # ★ 第二个项目：以五粮液 2025 年报为对象的审计模拟
 ```
+
+> **关联项目**：[`audit-simulation/`](audit-simulation/README.md) ——
+> 本项目筛出的五粮液异常（营收 −54.55% 而毛利率几乎不变），
+> 在审计视角下指向「**营业收入的确认**」这一关键审计事项。
+> 审计模拟项目即以此为起点，完整走一遍
+> **风险评估 → 审计程序设计 → 分析性程序执行 → 审计意见形成**的流程。
 
 ## 四、数据表
 
